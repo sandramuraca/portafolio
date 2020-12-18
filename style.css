@@ -2,4 +2,31 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: ;
+}
+
+
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.proy{
+    border: solid 1px red;
+    width: 30vw;
+    height: 250px;
+}
+
+.abajo{
+    margin-top: 20px;
+}
+
+.margin-left{
+    margin-left: 20px; 
+}
+
+.margin-rigth{
+    margin-right: 20px;
 }
