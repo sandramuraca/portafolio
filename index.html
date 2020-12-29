@@ -5,49 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Sandra Muraca</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f812df695.js" crossorigin="anonymous"></script>
 </head>
     <body>
         
-        <header>
-            <nav>
+        <header class="header josefin">
+            <nav class="nav">
                 <!-- cada li tiene que tener un href a la sección correspondiente -->
-                <ul>
-                    <li>HOLA</li>
-                    <li>CONOCIMIENTOS</li>
-                    <li>PROYECTOS</li>
-                    <li>CONTACTO</li>
+                <ul class="botones-inicio">
+                    <li class="icono">
+                        <span class="espacio"><i class="far fa-smile"></i></span>
+                        HOLA
+                    </li>
+
+                    <li class="icono"> 
+                        <span class="espacio"><i class="fas fa-code"></i></span>
+                        CONOCIMIENTOS
+                    </li>
+
+                    <li class="icono">
+                        <span class="espacio"><i class="fas fa-cogs"></span></i>
+                        PROYECTOS
+                    </li>
+
+                    <li class="icono botonsalmon">CONTACTO</li>
+
+                  
+                </li>
+                    
                 </ul>
             </nav>
+            
         </header>
 
         <main>
-            <section>
+            <section class="presentacion">
 
-                <div>
-                    <h2>Saludo</h2>
-                    <h1>Nombre</h1>
-                    <p>Texto presentación</p>
+                <div class="personal">
+                    <h2 class="josefin titulo-secundario">
+                        <span class="espacio"><i class="far fa-smile"></i> Hola! mi nombre es</h2>
+                    <h1 class="nombre">Sandra Muraca</h1>
+                    <p class="josefin descripcion">Soy desarrolladora Frontend , este es mi portfolio, y me gustaria contarte </p>
                     <!-- el boton tiene que tener un href hacia PROYECTOS -->
-                    <div>boton que hago?</div>
+                    <div class="josefin icono botonsalmon actividad"> lo que hago!</div>
                 </div>
 
-                <div>
-                    <img src="" alt="">
+                <div class="imagen">
+                    <img  class="develop" src="./img/undraw_dev_focus_b9xo (1).svg" alt="">
                 </div>
             </section>
 
-            <section>
-                <h2>CONICIMIENTOS</h2>
+            
 
-                <div>logo html</div>
-                <div>logo css</div>
-                <div>logo JS</div>
-                <div>logo sass</div>
-                <div>logo Git</div>
-                <div>Logo React</div>
+            <section class="conocimientos">
+
+                <h2 class=" josefin titulo-secundario">
+                    <span class="espacio"><i class="fas fa-code"></i></span>CONOCIMIENTOS</h2>
+
+                <div class="cards josefin">
+                    <div class="logo">
+                        <span class="html tamaño-logo"><i class="fab fa-html5"></i></span>
+                        HTML
+                    </div>
+                    <div class="logo">
+                        <span class="css tamaño-logo"><i class="fab fa-css3-alt"></i></span>
+                        CSS
+                    </div>
+
+                    <div class="logo">
+                        <span class="js tamaño-logo"><i class="fab fa-js"></i></span>
+                        JS
+                    </div>
+                </div>
+                
+                <div class="cards josefin">
+                    <div class="logo">
+                        <span class="sass tamaño-logo"><i class="fab fa-sass"></i></span>SASS</div>
+                    <div class="logo">
+                        <span class="git tamaño-logo"><i class="fab fa-github"></i></span>
+                        GIT HUB</div>
+                    <div class="logo">
+                        <span class="react tamaño-logo"><i class="fab fa-react"></i></span>
+                        REACT</div>
+                </div>
+                
 
             </section>
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <section>
                 <article>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam facilis facere voluptas animi placeat atque error amet doloremque corrupti nobis iste saepe recusandae cum aliquid sunt, corporis totam iure!</p>

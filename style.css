@@ -1,32 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: ;
+    background-color: rgb(238, 245, 219);
 }
 
+.header{    
+    display: flex;
+}
 
+.josefin{
+    font-family: 'Josefin Sans', sans-serif;
+}
 
-.card{
+.nav{
+    position: fixed;
+    z-index: 1;
+    height: 100px;   
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    box-shadow: 0px 0px 20px 0px  rgb(122, 158, 159) ;
 }
 
-.proy{
-    border: solid 1px red;
-    width: 30vw;
-    height: 250px;
+ul{
+    margin-right: 25px;
 }
 
-.abajo{
+.botones-inicio{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(79, 99, 103);
+}
+.botones-inicio :hover{
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    font-weight: 300;
+    color: rgb(184, 216, 216);
+}
+
+.icono{
+    padding-right: 35px;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding-top: 15px;
+    height: 50px;
+}
+
+.espacio{
+    padding-right: 10px;
+}
+
+.botonsalmon{
+    background-color: rgb(254, 95, 85);
+    border-radius: 30px;
+    padding-left:30px;
+    color: rgb(238, 245, 219); 
+    box-shadow: 0px 0px 20px 0px  rgb(122, 158, 159) ;
+}
+
+.botonsalmon:hover{
+    background-color:rgb(238, 245, 219);
+    border-radius: 30px;
+    padding-left:30px;
+    color: rgb(254, 95, 85); 
+    box-shadow: 0px 0px 20px 0px rgb(254, 95, 85);
+}
+
+.presentacion{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 120px;
+}
+
+.personal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.titulo-secundario, .descripcion{
+    color: rgb(79, 99, 103);
+    margin-top: 25px;
+}
+
+.titulo-secundario{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.descripcion, .actividad{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.nombre{
+    font-family: 'Fredoka One', cursive;
+    font-size: 70px;
+    color: rgb(254, 95, 85);
     margin-top: 20px;
 }
 
-.margin-left{
-    margin-left: 20px; 
+.imagen{
+    display: flex;
+    justify-content: center;
 }
 
-.margin-rigth{
-    margin-right: 20px;
+.develop{
+    width: 70%;
 }
+
+.conocimintos{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-secundario{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;    
+}
+ .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    border: solid 1px  rgb(184, 216, 216);
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
+    font-size: 25px;
+    color:  rgb(79, 99, 103);
+    font-family: ;
+ }
+
+ .html{
+    color:rgb(229, 77, 38);
+}
+
+.css{
+    color: rgb(61, 143, 198);
+}
+
+.js{
+    color: rgb(240, 219, 79);
+}
+.sass{
+    color: rgb(204, 102, 153);
+}
+.git{
+    color: rgb(243, 79, 41);
+}
+
+.react{
+    color: aquamarine;
+}
+
+.tamaño-logo{
+    font-size: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
