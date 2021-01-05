@@ -95,6 +95,7 @@ ul{
 .titulo-secundario, .descripcion{
     color: rgb(79, 99, 103);
     margin-top: 25px;
+    margin-left: 20px;
 }
 
 .titulo-secundario{
@@ -111,7 +112,6 @@ ul{
     font-family: 'Fredoka One', cursive;
     font-size: 70px;
     color: rgb(254, 95, 85);
-    margin-top: 20px;
 }
 
 .imagen{
@@ -123,7 +123,7 @@ ul{
     width: 70%;
 }
 
-.conocimintos{
+.conocimientos{
     display: flex;
     flex-direction: column;
 }
@@ -136,23 +136,26 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10px;    
+    margin-top: 5px;    
 }
  .logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 30px;
     width: 300px;
     height: 200px;
     border: solid 1px  rgb(184, 216, 216);
-    margin-top: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
     font-size: 25px;
     color:  rgb(79, 99, 103);
-    font-family: ;
- }
+}
+
+.cards :hover{
+    box-shadow: 0px 0px 15px 0px  rgb(255, 198, 194);
+}
 
  .html{
     color:rgb(229, 77, 38);
@@ -176,9 +179,115 @@ ul{
     color: aquamarine;
 }
 
-.tamaño-logo{
+.tamanio-logo{
     font-size: 100px;
 }
+
+.articulo{
+    box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
+}
+.contenededor-texto{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 198, 194);
+   
+}
+
+.signo{
+    color:  rgb(79, 99, 103);
+    font-size: 115px;
+    background-color: rgb(255, 198, 194);
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.texto{
+    color:  rgb(79, 99, 103);
+    font-size: 40px;
+    background-color: rgb(255, 198, 194);
+    display: flex;
+    font-family: 'Fredoka One', cursive;
+    width: 50vw;
+    padding-bottom: 30px;
+    line-height: 60px;
+    text-align: justify;
+}
+
+
+
+.proy{
+    width: 420px;
+    height: 300px;
+}
+
+.padding-botton{
+    padding-bottom: 20px;
+}
+
+.img-proy{
+    width: 380px;
+}
+
+.contenedor-contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 100px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    border: solid 1px  rgb(184, 216, 216);
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
+    font-size: 25px;
+    color:  rgb(79, 99, 103);
+}
+
+.contactame{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 30px;
+    font-weight: 300; 
+    line-height: 40px;
+    text-align: justify;
+}
+
+.margin-top30{
+    margin-top: 30px;  
+}
+
+.margin-top40{
+    margin-top: 40px;  
+}
+
+.lista-redes{
+    list-style: none;
+    font-weight: 400;
+}
+
+.icono-redes{
+    font-size: 30px;
+    padding-right: 15px;
+    color: rgb(254, 95, 85);
+}
+
+
+
+
+    
+    
 
 
 
