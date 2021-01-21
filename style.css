@@ -540,6 +540,8 @@ footer a{
 .boton-icono-footer{
     background-color: rgb(79, 99, 103);
     display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 
