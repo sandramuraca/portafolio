@@ -129,43 +129,46 @@
             <a name="proyectos">
 
             <section class="proyectos">
-                
+               
                 <h2 class="proyectos margin-top40 titulo-secundario">
                     <span><i class="fas fa-cogs"></i></span>
                     MIS PROYECTOS
                 </h2>
+               
+                <div class="contenedor-proyectos">
+                  <a class="card-proyecto" href="#">
+                      <img  src="./img/portfolio2.png" alt="" width="350px">
+                      <p class="descripcion-proyecto" >Portfolio</p>
+                  </a>
 
-                    <div class="cards">
-                        <div class="logo proy">
-                            <img class="img-proy padding-botton" src="./img/portfolio2.png" alt=""> <a class="linkcard" href="#">
-                            Portfolio</a>
-                        </div>
+                  <a class="card-proyecto" href="#">
+                    <img src="./img/undraw_creative_woman_v415.svg" alt="" width="250px" >
+                    <p class="descripcion-proyecto">Editor de Memes</p>
+                    </a>
 
-                        <div class="logo proy">
-                            <img class="img-proy padding-botton" src="" alt="">
-                            <a class="linkcard" href="#"> Proyecto2</a>
-                        </div>
-                        <div class="logo  proy">
-                            <img class="img-proy padding-botton" src="" alt="">
-                            <a class="linkcard" href="#"> Proyecto 3</a>
-                        </div>
-                    </div>
+                    <a class="card-proyecto" href="#">
+                    <img src="./img/undraw_gaming_6oy3.svg" alt="" width="200px">
+                    <p class="descripcion-proyecto">Game Match</p>
+                    </a>
+                </div>
 
-                    <div class="cards">
-                        <div class="logo proy">
-                            <img src="" alt="">
-                            <a class="linkcard"  href="#"> Proyecto 4</a>
-                        </div>
-
-                        <div class="logo  proy">
-                            <img src="" alt="">
-                            <a class="linkcard" href="#"> proyecto 5</a>
-                        </div>
-                        <div class="logo proy">
-                            <img src="" alt="">
-                            <a class="linkcard" href="#"> proyecto 6</a>
-                        </div>
-                    </div>
+                <div class="contenedor-proyectos">
+                    <a class="card-proyecto" href="#">
+                        <img src="./img/undraw_Savings_re_eq4w.svg" alt="" width="200px">
+                        <p class="descripcion-proyecto">Controlador de Gastos</p>
+                    </a>
+  
+                    <a class="card-proyecto" href="#">
+                      <img class="img-proyecto" src="" alt="">
+                      <p class="descripcion-proyecto">Proyecto 5</p>
+                      </a>
+  
+                      <a class="card-proyecto" href="#">
+                      <img class="img-proyecto" src="" alt="">
+                      <p class="descripcion-proyecto">Proyecto 6</p>
+                      </a>
+                  </div>
+                  
 
             </section>
 
@@ -183,25 +186,25 @@
                             
                             <ul class="margin-top30 lista-redes">
                                 
-                                <a class="github" href="https://github.com/sandramuraca" target="blanck">
-                                    <li class="redes">
-                                        <span class="icono-redes"><i class="fab fa-github"></i></span> 
+                                <li class="redes">
+                                    <a class="github" href="https://github.com/sandramuraca" target="blanck">
+                                        <i class=" icono-redes fab fa-github"></i> 
                                         Git Hub
-                                    </li>
-                                </a>
+                                    </a>
+                                </li>
                                 
-                                <a class="linkeding" href="https://www.linkedin.com/in/sandra-muraca-13a76146/" target="blanck">
-                                    <li class="redes"> 
-                                        <span class="icono-redes"><i class="fab fa-linkedin-in"></i></span> 
+                                <li class="redes"> 
+                                    <a class="linkeding" href="https://www.linkedin.com/in/sandra-muraca-13a76146/" target="blanck">
+                                        <i class="icono-redes fab fa-linkedin-in"></i>
                                         Linkeding
+                                    </a>
                                 </li> 
-                                </a>
-
-                                <a  class="mailto" href="mailto:sandramuraca@gmail.com">
-                                    <li class="redes"> <span class="icono-redes"><i class="fas fa-envelope"></i></span> sandramuraca@gmail.com
-                                    </li>
-                                </a>
-
+                                
+                                <li class="redes">
+                                    <a  class="mailto" href="mailto:sandramuraca@gmail.com"><i class="icono-redes fas fa-envelope"></i> sandramuraca@gmail.com
+                                    </a> 
+                                </li>
+                            
                             </ul>
                         </div>
 
@@ -215,13 +218,13 @@
                                 <div class="campo-nom-y-ap">
                                     <label for="nombre">Nombre (*):</label>
                                     <br>
-                                    <input  type="text" name="nombre" id="nombre" placeholder="Ej:Juan" required class="campoform">
+                                    <input  type="text" name="nombre" id="nombre" placeholder="Ej:Juan" required class="campoform-nombreyapellido">
                                 </div>
 
                                 <div class="campo-nom-y-ap">
                                     <label for="apellido">Apellido (*):</label>
                                     <br>
-                                    <input  type="text" name="apellido" id="apellido" placeholder="Ej: Perez" required class="campoform">
+                                    <input  type="text" name="apellido" id="apellido" placeholder="Ej: Perez" required class="campoform-nombreyapellido">
                                 </div>
                             </div>
                             
@@ -275,31 +278,31 @@
 
                 <div class="iconos-footer margin-top40">
                     
-                    <a  href="https://github.com/sandramuraca" target="blanck" class="icono-redes-footer">
-                        <span class="icono-redes-footer">
-                            <i class="fab fa-github"> </i>
+                    <a class="boton-icono-footer" href="https://github.com/sandramuraca" target="blanck" >
+                        <span class="boton-icono-footer">
+                            <i class="icono-redes-footer fab fa-github-alt"></i>
                         </span>
                     </a> 
                     
                        
-                    <a  href="https://www.linkedin.com/in/sandra-muraca-13a76146/" target="blanck">
-                        <span class="icono-redes-footer">
-                            <i class="fab fa-linkedin-in"></i>
-                        </span> 
+                    <a class="boton-icono-footer" href="https://www.linkedin.com/in/sandra-muraca-13a76146/" target="blanck">
+                        <span class="boton-icono-footer">
+                            <i class="icono-redes-footer fab fa-linkedin-in"></i>
+                        </span>
                     </a>
                        
                         
-                    <a  href="mailto:sandramuraca@gmail.com">
-                        <span class="icono-redes-footer">
-                            <i class="fas fa-envelope"></i>
-                        </span> 
+                    <a class="boton-icono-footer" href="mailto:sandramuraca@gmail.com">
+                        <span class="boton-icono-footer">
+                            <i class="icono-redes-footer fas fa-envelope"></i>
+                        </span>
                     </a>
                        
                    
                 </div>
 
                 <div class="copyright margin-top30">
-                    <p class="texto-copy"> <i class="icono-copy" class="fa fa-copyright" aria-hidden="true"> </i> 💻 2021 - Diseño y Desarrollo: Sandra Muraca 💻</p>
+                   <p class="texto-copy"> 💻<span class="copyright"> <i class="icono-copy fas fa-copyright"></i></span> 2021 - Diseño y Desarrollo: Sandra Muraca 💻</p>
                     
                 </div>
             </div>

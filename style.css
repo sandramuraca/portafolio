@@ -30,6 +30,8 @@
     color: rgb(79, 99, 103);
 }
 
+
+
 ul{
     margin-right: 25px;
 }
@@ -155,7 +157,6 @@ ul{
 /*fin seccion presentacion*/
 
 /*seccion conocimientos*/
-
 .conocimientos{
     width: 100vw;
     height: 95vh;
@@ -168,8 +169,8 @@ ul{
 .cards{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 5px;    
+    justify-content:space-around;
+    margin-top: 5px;  
 }
 
  .logo{
@@ -258,26 +259,48 @@ ul{
 /*fin articulo*/
 
 /*seccion proyectos*/
-
 .proyectos{
   padding-top: 50px;
+  text-align: center;
 }
 
-.proy{
+.contenedor-proyectos{
+    display: flex;
+    flex: row;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+.card-proyecto{
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(122, 158, 159);
+    border: solid 1px   rgb(184, 216, 216);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px  rgb(122, 158, 159);
     width: 400px;
-    height: 220px;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 50px;
 }
 
-.padding-botton{
-    padding-bottom: 20px;
+.card-proyecto:hover{
+    box-shadow: 0px 0px 10px 0px  rgb(255, 198, 194);
+    border: none;
+    transition: 0.3s;
 }
 
-.img-proy{
-    width: 270px;
+
+.descripcion-proyecto{
+    padding-top: 10px;
 }
+
 /*fin proyectos*/
 
 /*seccion contacto redes*/
+/* recuadro contenedor de la seccion contacto*/
 .contenedor-contacto{
     display: flex;
     flex-direction: row;
@@ -297,9 +320,10 @@ ul{
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
     font-size: 25px;
     color:  rgb(79, 99, 103);
- 
 }
+/*fin recuadro contenedor de la seccion contacto*/
 
+/*Margen izquierdo seccion contacto*/
 .contactame{
     display: flex;
     flex-direction: column;
@@ -318,6 +342,7 @@ ul{
     margin-top: 40px;  
 }
 
+/*iconos redes*/
 .lista-redes{
     list-style: none;
     font-weight: 400;
@@ -330,22 +355,30 @@ ul{
 }
 
 .icono-redes{
-    font-size: 40px;
-    padding-right: 15px;
+    font-size: 30px;
     color:rgb(254, 95, 85);
+    background-color: rgb(238, 245, 219);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.75em;
 }
 
 .icono-redes:hover{
-    color: rgb(79, 99, 103);
-    transition: 0.2s;
+    color: rgb(238, 245, 219);
+    background-color: rgb(254, 95, 85);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+    text-align: center;
+    line-height: 1.75em;
 }
-
-
-
 /*fin redes*/
 
-/*formulario contacto*/
 
+/*formulario contacto*/
 .escribime{
     width: 40%;
     display: flex;
@@ -363,18 +396,25 @@ ul{
 .datos{
     display: flex;
 }
+
+
 .campo-nom-y-ap{
-    flex-grow: 1;
+   flex-grow: 1;    
 }
 
-.campoform{
+.campoform, .campoform-nombreyapellido{
     background-color: rgb(184, 216, 216);
     border: 0;
     outline: none;
     height: 40px;
     border-radius: 20px;
-    
 }
+
+
+.campoform-nombreyapellido{
+    width: 15vw;
+}
+
 .textarea{
     background-color: rgb(184, 216, 216);
     border: 0;
@@ -446,15 +486,11 @@ form p{
 
 /*footer*/
 
-
 footer a{
     text-decoration: none;
 }
 
-.lista-contacto{
-    background-color: rgb(79, 99, 103);
-}
-
+/* div footer que contiene links a secciones e iconos a redes*/
 .footer{
     display: flex;
     flex-direction: column;
@@ -465,7 +501,7 @@ footer a{
     background-color:rgb(79, 99, 103);
 }
 
-
+/*links a secciones footer*/
 .lista-footer{
     display: flex;
     flex-direction: row;
@@ -488,6 +524,9 @@ footer a{
 .item-footer:hover{
     color:rgb(122, 158, 159);
 }
+/*fin links a secciones*/
+
+/*iconoos redes footer*/
 
 .iconos-footer{
     display: flex;
@@ -496,21 +535,47 @@ footer a{
     justify-content: space-around;
     align-items: center;
     background-color: rgb(79, 99, 103);
-    
 }  
 
+.boton-icono-footer{
+    background-color: rgb(79, 99, 103);
+    display: flex;
+} 
+
+
 .icono-redes-footer{
-    font-size: 40px;
-    color: crimson;
+    background-color:rgb(238, 245, 219) ;
+    color: rgb(79, 99, 103);
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    border: solid 1px rgb(238, 245, 219);
+    line-height: 1.75em;
 }
- 
+
+
+.icono-redes-footer:hover{
+    background-color: rgb(79, 99, 103);
+    color: rgb(238, 245, 219);
+    transition: 0.2s;
+}
+
+.icono-redes-footer:active{
+    box-shadow: 0px 0px 20px 0px rgb(238, 245, 219);
+}
+
+/*fin iconos redes footer*/
+
+/*linea final*/
 .copyright, .texto-copy, .icono-copy{
     font-size: 20px;
     background-color: rgb(79, 99, 103);
     color:rgb(238, 245, 219) ;
     font-weight: 300;
 }
-
+/* fin footer*/
 
 
 
