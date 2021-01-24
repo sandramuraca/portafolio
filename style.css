@@ -9,9 +9,14 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
+body{
+   width: 100vw;
+}
+
 /*barra de navegacion*/
 .header{    
     display: flex;
+    width: 100vw;
 }
 
 .nav{
@@ -100,6 +105,8 @@ ul{
 }
 /*fin barra navegacion*/
 
+
+
 /*seccion presentacion*/
 .presentacion{
     width: 100vw;
@@ -159,18 +166,22 @@ ul{
 /*seccion conocimientos*/
 .conocimientos{
     width: 100vw;
-    height: 95vh;
+    /*height: 100vh;*/
     display: flex;
     flex-direction: column;
     padding-top: 100px;
-    
 }
 
 .cards{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
-    margin-top: 5px;  
+    align-items: center;
+    height: 250px;
+}
+
+.margin-botton{
+    margin-bottom: 30px;
 }
 
  .logo{
@@ -178,8 +189,7 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    width: 300px;
+    width: 250px;
     height: 200px;
     border: solid 1px  rgb(184, 216, 216);
     border-radius: 15px;
@@ -188,7 +198,7 @@ ul{
     color:  rgb(79, 99, 103);
 }
 
-.cards :hover{
+.logo:hover{
     box-shadow: 0px 0px 15px 0px  rgb(255, 198, 194);
     transition: 0.2s;
     color:  rgb(122, 158, 159);
@@ -225,24 +235,25 @@ ul{
 
 .articulo{
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
+    
 }
+
 .contenededor-texto{
     width: 100vw;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: rgb(254, 95, 85);
+  
 }
 
 .signo{
     color:  rgb(238, 245, 219);
-    font-size: 115px;
+    font-size: 95px;
     background-color: rgb(254, 95, 85);
-    display: flex;
-    justify-content: center;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .texto-articulo{
@@ -266,9 +277,8 @@ ul{
 
 .contenedor-proyectos{
     display: flex;
-    flex: row;
-    justify-content: center;
-    width: 100%;
+    flex-direction: row;
+    width: 100vw;
     height: 300px;
 }
 
@@ -282,8 +292,7 @@ ul{
     box-shadow: 0px 0px 10px 0px  rgb(122, 158, 159);
     width: 400px;
     height: 250px;
-    margin-top: 30px;
-    margin-right: 50px;
+    margin: auto;   
 }
 
 .card-proyecto:hover{
@@ -292,11 +301,25 @@ ul{
     transition: 0.3s;
 }
 
+.img-portfolio{
+    width:350px;
+}
+
+.img-edit-meme{
+    width: 240px;
+}
+
+.img-game{
+   width: 200px; 
+}
 
 .descripcion-proyecto{
     padding-top: 10px;
 }
 
+.img-contol-gastos{
+  width: 200px;  
+}
 /*fin proyectos*/
 
 /*seccion contacto redes*/
@@ -328,9 +351,10 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 35vw;
+    height: 95wh;
     font-weight: 300; 
-    line-height: 40px;
+    line-height: 35px;
     text-align: justify;
 }
 
@@ -346,7 +370,8 @@ ul{
 .lista-redes{
     list-style: none;
     font-weight: 400;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    height: 200px;
 }
 
 .linkeding, .github, .mailto{
@@ -377,10 +402,9 @@ ul{
 }
 /*fin redes*/
 
-
 /*formulario contacto*/
 .escribime{
-    width: 40%;
+    width: 35vw;
     display: flex;
     flex-direction: column;
 }
@@ -391,7 +415,7 @@ ul{
     justify-content: space-between;
 }
 .margin-top10{
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .datos{
     display: flex;
@@ -412,7 +436,7 @@ ul{
 
 
 .campoform-nombreyapellido{
-    width: 15vw;
+    width: 16vw;
 }
 
 .textarea{
@@ -529,19 +553,16 @@ footer a{
 /*iconoos redes footer*/
 
 .iconos-footer{
+    width: 20vw;
     display: flex;
     flex-direction: row;
-    width: 20vw;
     justify-content: space-around;
-    align-items: center;
     background-color: rgb(79, 99, 103);
 }  
 
 .boton-icono-footer{
     background-color: rgb(79, 99, 103);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 } 
 
 
@@ -549,12 +570,10 @@ footer a{
     background-color:rgb(238, 245, 219) ;
     color: rgb(79, 99, 103);
     font-size: 30px;
+    border-radius: 50%;
     width: 60px;
     height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    border: solid 1px rgb(238, 245, 219);
-    line-height: 1.75em;
+    padding: 15px;
 }
 
 
@@ -579,11 +598,199 @@ footer a{
 }
 /* fin footer*/
 
+/*Responsive breack point de 0 a 1000 pixeles
+*/
 
+@media (max-width: 1000px){
+    .header{
+        display: none;
+    }
 
+    .presentacion{
+        flex-direction: column;
+    }
 
+    .imagen{
+        margin-top: 20px;
+    }
 
+    .develop{
+        width: 45%;
+        margin-top: 20px;
+    }
 
+    .titulo-secundario{
+        font-size: 40px;
+        margin-top: 30px;
+    }
 
+    .logo{
+        width: 200px;
+        height: 150px;
+    }
 
+    .contenededor-texto{
+        
+        height: 500px;
+    }
+
+    .signo{
+        font-size: 50px;
+    }
+
+    .texto-articulo{
+        padding-top: 20px;
+        font-size: 30px;
+        width: 80vw;
+        line-height: 30px;
+    }
+    
+    .contenedor-proyectos{
+        height: 300px;
+    }
+    .card-proyecto{
+        width: 300px;
+        height: 200px;
+    }
+    .img-portfolio{
+        width: 250px;
+    }
+    .img-edit-meme{
+        width: 170px;
+    }
+
+    .img-game{
+        width: 160px;
+    }
+
+    .img-contol-gastos{
+        width: 160px;
+    }
+
+    .contenedor-contacto{
+        height: 600px;
+    }
+
+    .contactame{
+        line-height: 30px;
+        font-size: 22px;
+    }
+
+    .escribime{
+        font-size: 22px;
+    }
+
+    .footer{
+        height: 400px;
+    }
+    .lista-footer{
+        width: 80vw;
+    }
+
+    .iconos-footer{
+        width: 40vw;
+    }
+}
+
+@media (max-width: 900px){
+    
+    .contenedor-proyectos{
+        flex-direction: column;
+        height: 700px;
+    }
+    .card-proyecto{
+        width: 60vw;
+    }
+    .contacto{
+        flex-direction: column;
+        width: 90vw;
+        height: 900px;
+    }
+
+    .contactame{
+        width: 80vw;
+        font-size: 18px;
+        height: 300px;
+        margin:auto
+    }
+
+    .tecto-contactame{
+        margin-top: 10px;
+    }
+
+    .lista-redes{
+        margin-bottom: 10px;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    .escribime{
+        width: 80vw;
+        margin:auto;
+        font-size: 20px;
+    }
+
+    .formulario{
+        margin-top: 20px;
+    }
+
+    .campoform-nombreyapellido{
+        width: 39vw;
+    }
+    footer{
+        /*display:flex;*/
+        margin-top: 350px;
+    }
+}
+
+@media (max-width: 800px){
+    .lista-footer{
+        display: none;
+    }
+}
+
+@media (max-width: 610px){
+    .cards{
+        flex-direction: column;
+        height: 500px;
+    }
+    .logo{
+        width: 60vw;
+    }
+}
+
+@media (max-width: 470px){
+   .iconos-footer{
+       width: 90vw;
+   } 
+   .texto-copy{
+       font-size: 15px;
+   }
+}
+@media (max-width: 411
+px){
+    .img-portfolio{
+        width: 150px;
+    }
+    .contacto{
+        height: 900px;
+    }
+    .icono-redes{
+       font-size: 20px;
+   } 
+   .lista-redes{
+       flex-direction: column;
+       flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 380px){
+    .titulo-secundario{
+        font-size: 32px;
+    }
+   
+    
+}
 
