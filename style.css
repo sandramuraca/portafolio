@@ -704,7 +704,7 @@ footer a{
     .contacto{
         flex-direction: column;
         width: 90vw;
-        height: 900px;
+        height: 950px;
     }
 
     .contactame{
@@ -714,18 +714,10 @@ footer a{
         margin:auto
     }
 
-    .tecto-contactame{
+    .texto-contactame{
         margin-top: 10px;
     }
 
-    .lista-redes{
-        margin-bottom: 10px;
-        height: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: auto;
-    }
     .escribime{
         width: 80vw;
         margin:auto;
@@ -741,7 +733,7 @@ footer a{
     }
     footer{
         /*display:flex;*/
-        margin-top: 350px;
+        margin-top: 400px;
     }
 }
 
@@ -759,9 +751,7 @@ footer a{
     .logo{
         width: 60vw;
     }
-}
 
-@media (max-width: 470px){
    .iconos-footer{
        width: 90vw;
    } 
@@ -770,10 +760,17 @@ footer a{
    }
 
     .img-portfolio{
-        width: 150px;
+        width: 170px;
+    }
+    .img-contol-gastos{
+        width: 140px;
     }
     .contacto{
-        height: 900px;
+        height: 950px;
+    }
+    
+    .texto-contactame{
+        margin-top: 10px;
     }
     .icono-redes{
        font-size: 20px;
