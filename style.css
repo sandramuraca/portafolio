@@ -608,6 +608,7 @@ footer a{
 
     .presentacion{
         flex-direction: column;
+        margin-top: 40px;
     }
 
     .imagen{
@@ -630,7 +631,6 @@ footer a{
     }
 
     .contenededor-texto{
-        
         height: 500px;
     }
 
@@ -781,6 +781,29 @@ footer a{
     }
     .titulo-secundario{
         font-size: 32px;
+    }
+}
+@media (max-width: 470px){
+    .texto-contactame{
+        margin-top: 5px;
+    }
+
+    .escribime{
+        width: 80vw;
+        margin:auto;
+        font-size: 15px;
+    }
+    .redes{
+        height: 35px;
+        font-size: 16px;
+        width: 280px;
+    }
+
+    .escribime{
+        padding-top: 10px;
+    }
+    .footer{
+        height: 300px;
     }
 }
 
