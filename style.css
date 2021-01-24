@@ -768,9 +768,7 @@ footer a{
    .texto-copy{
        font-size: 15px;
    }
-}
-@media (max-width: 411
-px){
+
     .img-portfolio{
         width: 150px;
     }
@@ -784,13 +782,10 @@ px){
        flex-direction: column;
        flex-wrap: nowrap;
     }
-}
-
-@media (max-width: 380px){
     .titulo-secundario{
         font-size: 32px;
     }
-   
-    
 }
+
+
 
