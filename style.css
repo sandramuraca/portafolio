@@ -22,7 +22,7 @@ body{
 .nav{
     position: fixed;
     z-index: 1;
-    height: 100px;   
+    height: 90px;   
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -33,88 +33,69 @@ body{
 .linknav, .linkcard{
     text-decoration: none;
     color: rgb(79, 99, 103);
+    padding: 10px;
 }
 
 
-
-ul{
-    margin-right: 25px;
-}
-
-.botones-nav{
+.menu-header{
+    margin-right: 40px;
     display: flex;
     list-style: none;
-    font-size: 25px;
-    font-weight: 300;
+    width: 60vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linknav{
+    font-size: 20px;
     color: rgb(79, 99, 103);
 }
-.botones-nav :hover{
-    display: flex;
-    list-style: none;
-    font-size: 25px;
-    font-weight: 300;
+
+.linknav:hover{
     color: rgb(184, 216, 216);
     transition: 0.2s;
 }
 
-.icono{
-    padding-right: 35px;
-    margin-right: 10px;
-    margin-top: 30px;
-    padding-top: 15px;
-    height: 50px;
-}
-
-.padding-right10{
-    padding-right: 10px;
+.linknav:active{
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgb(255, 198, 194);
+    transition: 0.2s;
 }
 
 .boton-salmon{
     background-color: rgb(254, 95, 85);
     border-radius: 30px;
-    padding-left:30px;
+    padding: 15px;
     color: rgb(238, 245, 219); 
     box-shadow: 0px 0px 20px 0px  rgb(122, 158, 159);
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 300;
-    margin-right: 35px;
 }
-
 
 .boton-salmon:hover{
     background-color:rgb(238, 245, 219);
     border-radius: 30px;
-    padding-left:30px;
     color: rgb(254, 95, 85); 
-    box-shadow: 0px 0px 20px 0px rgb(254, 95, 85);
+    box-shadow: 0px 0px 10px 0px rgb(255, 198, 194);
     transition: 0.2s;
-       
 }
 
 .link-botonsalmon{
     text-decoration: none;
 }
 
-
-.icono:active{
-    border: solid 1px rgb(255, 198, 194);
-    border-radius: 30px;
-    padding-left: 17px;
-    box-shadow: 0px 0px 7px 0px rgb(255, 198, 194);
-    transition: 0.2s;
-}
 /*fin barra navegacion*/
 
 
-
 /*seccion presentacion*/
+
 .presentacion{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 110px;
 }
 .personal{
     display: flex;
@@ -133,24 +114,20 @@ ul{
 }
 
 .titulo-secundario{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 300;
 }
 
 .descripcion{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
 }
 
 .nombre{
     font-family: 'Fredoka One', cursive;
-    font-size: 70px;
+    font-size: 60px;
     color: rgb(254, 95, 85);
     text-align: center;
-}
-
-.link-botonsalmon{
-    text-decoration: none;
 }
 
 .imagen{
@@ -164,37 +141,35 @@ ul{
 /*fin seccion presentacion*/
 
 /*seccion conocimientos*/
-.conocimientos{
+.seccion-cards{
     width: 100vw;
-    /*height: 100vh;*/
+    height: 600px;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding: 100px;
+    margin: auto;
 }
 
 .cards{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content:space-around;
     align-items: center;
-    height: 250px;
 }
 
-.margin-botton{
-    margin-bottom: 30px;
-}
-
- .logo{
+.logo{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 200px;
+    height: 170px;
+    margin: 10px 50px;
     border: solid 1px  rgb(184, 216, 216);
     border-radius: 15px;
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
-    font-size: 25px;
+    font-size: 20px;
     color:  rgb(79, 99, 103);
 }
 
@@ -227,7 +202,7 @@ ul{
 }
 
 .tamanio-logo{
-    font-size: 100px;
+    font-size: 70px;
 }
 /*fin seccion conocimientos*/
 
@@ -235,90 +210,87 @@ ul{
 
 .articulo{
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
-    
 }
 
 .contenededor-texto{
     width: 100vw;
-    height: 95vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(254, 95, 85);
-  
 }
 
 .signo{
     color:  rgb(238, 245, 219);
-    font-size: 95px;
+    font-size: 80px;
     background-color: rgb(254, 95, 85);
     padding-top: 20px;
 }
 
 .texto-articulo{
-    color:  rgb(238, 245, 219);
-    font-size: 40px;
-    background-color: rgb(254, 95, 85);
     display: flex;
-    font-family: 'Josefin Sans', sans-serif;
-    width: 50vw;
-    padding-bottom: 30px;
+    width: 45vw;
+    color:  rgb(238, 245, 219);
+    background-color: rgb(254, 95, 85);
+    font-size: 35px;
+    font-weight: 300;
     line-height: 60px;
     text-align: justify;
 }
 /*fin articulo*/
 
 /*seccion proyectos*/
-.proyectos{
-  padding-top: 50px;
-  text-align: center;
-}
-
 .contenedor-proyectos{
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    height: 300px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 600px;
 }
 
 .card-proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 300;
     color: rgb(122, 158, 159);
     border: solid 1px   rgb(184, 216, 216);
     border-radius: 30px;
     box-shadow: 0px 0px 10px 0px  rgb(122, 158, 159);
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     margin: auto;   
+    margin-top: 10px;
 }
 
 .card-proyecto:hover{
     box-shadow: 0px 0px 10px 0px  rgb(255, 198, 194);
-    border: none;
     transition: 0.3s;
 }
 
 .img-portfolio{
-    width:350px;
+    width: 280px;
 }
 
 .img-edit-meme{
-    width: 240px;
+    width: 200px;
 }
 
 .img-game{
-   width: 200px; 
+   width: 180px; 
+}
+
+.img-contol-gastos{
+    width: 200px;  
 }
 
 .descripcion-proyecto{
     padding-top: 10px;
-}
-
-.img-contol-gastos{
-  width: 200px;  
 }
 /*fin proyectos*/
 
@@ -329,19 +301,19 @@ ul{
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 90vh;
+    height: 600px;
     margin-top: 100px;
  }
 
 .contacto{
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 80vw;
     justify-content: space-around;
     border: solid 1px  rgb(184, 216, 216);
     border-radius: 15px;
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
-    font-size: 25px;
+    font-size: 20px;
     color:  rgb(79, 99, 103);
 }
 /*fin recuadro contenedor de la seccion contacto*/
@@ -352,7 +324,6 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     width: 35vw;
-    height: 95wh;
     font-weight: 300; 
     line-height: 35px;
     text-align: justify;
@@ -370,7 +341,6 @@ ul{
 .lista-redes{
     list-style: none;
     font-weight: 400;
-    margin-bottom: 50px;
     height: 200px;
 }
 
@@ -413,6 +383,7 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 10px;
 }
 .margin-top10{
     margin-top: 10px;
@@ -420,7 +391,6 @@ ul{
 .datos{
     display: flex;
 }
-
 
 .campo-nom-y-ap{
    flex-grow: 1;    
@@ -432,6 +402,7 @@ ul{
     outline: none;
     height: 40px;
     border-radius: 20px;
+    padding-left: 15px;
 }
 
 
@@ -444,10 +415,9 @@ ul{
     border: 0;
     border-radius: 20px;
     outline: none;
+    padding: 10px 0 0 15px;
 }
-::placeholder{
-    padding-left: 20px;
-}
+
 form label{
     font-weight: 300;
     padding-top: 20px;
@@ -458,6 +428,9 @@ form p{
     font-weight: 300;
     padding-top: 10px;
     font-size: 20px  
+}
+.campos-obl{
+    font-size: 16px;
 }
 
 .botones.form{
@@ -494,7 +467,7 @@ form p{
     height: 45px;
     border:0;
     outline: none;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 10px;
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
 }
@@ -520,8 +493,8 @@ footer a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    width: 100vw;
+    height: 300px;
+    /*width: 100vw;*/
     background-color:rgb(79, 99, 103);
 }
 
@@ -533,7 +506,7 @@ footer a{
     justify-content: space-between;
     list-style: none;
     background-color: rgb(79, 99, 103);
-    font-size: 25px;
+    font-size: 20px;
     color:rgb(238, 245, 219);
     font-weight: 300;
 }
@@ -551,7 +524,6 @@ footer a{
 /*fin links a secciones*/
 
 /*iconoos redes footer*/
-
 .iconos-footer{
     width: 20vw;
     display: flex;
@@ -562,7 +534,6 @@ footer a{
 
 .boton-icono-footer{
     background-color: rgb(79, 99, 103);
-   
 } 
 
 
@@ -591,7 +562,7 @@ footer a{
 
 /*linea final*/
 .copyright, .texto-copy, .icono-copy{
-    font-size: 20px;
+    font-size: 18px;
     background-color: rgb(79, 99, 103);
     color:rgb(238, 245, 219) ;
     font-weight: 300;

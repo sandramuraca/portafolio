@@ -12,32 +12,41 @@
         <header class="header">
 
             <nav class="nav">
-               
-                <ul class="botones-nav">
+                
+                <ul class="menu-header">
                     
+
                     <li class="icono">
-                        <span class="padding-right10"><i class="far fa-smile"></i></span> <a class="linknav" href="#presentacion">
-                            HOLA</a>
+                        <a class="linknav" href="#presentacion">
+                            <i class="far fa-smile"></i>
+                            <span class="padding-left10">HOLA</span> 
+                        </a>
                     </li>
 
-                    <li class="icono"> 
-                        <span class="padding-right10"><i class="fas fa-code"></i></span>
+                    <li class="icono">
                         <a class="linknav" href="#conocimientos">
-                        CONOCIMIENTOS</a>
+                            <i class="fas fa-code"></i>                       
+                            <span class="padding-left10">CONOCIMIENTOS</span>
+                        </a>
                     </li>
 
-                    <li class="icono"> 
-                        <span class="padding-right10"><i class="fas fa-cogs"></i></span>
+                    <li class="icono">
                         <a class="linknav" href="#proyectos">
-                        PROYECTOS</a>
+                            <i class="fas fa-cogs"></i>
+                            <span class="padding-left10">PROYECTOS</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link-botonsalmon" href="#contacto">
+                            <span class="icono boton-salmon margin-right"> CONTACTO
+                            </span>
+                       </a>
                     </li>
                                                                             
                 </ul>
 
-                <a class="link-botonsalmon" href="#contacto">
-                    <div class="icono boton-salmon margin-right"> CONTACTO
-                    </div>
-                </a>
+                
                 
             </nav>
             
@@ -55,7 +64,7 @@
                         <h1 class="nombre margin-top30">Sandra Muraca</h1>
                         <p class="descripcion">Soy desarrolladora Frontend, Argentina, este es mi portfolio, y me gustaria contarte </p>
                         
-                        <a class="link-botonsalmon" href="#proyectos">
+                        <a class="link-botonsalmon margin-top30" href="#proyectos">
                             <div class="icono boton-salmon"> lo que hago!
                             </div>
                         </a>
@@ -68,13 +77,13 @@
 
             
             <a name="conocimientos">
-            <section class="conocimientos">
+            <section class="seccion-cards">
 
                 <h2 class="titulo-secundario">
-                    <span class="padding-right10"><i class="fas fa-code"></i></span>
+                    <span><i class="fas fa-code"></i></span>
                     CONOCIMIENTOS</h2>
 
-                <div class="cards margin-top10">
+                <div class="cards">
                     <div class="logo">
                         <span class="html tamanio-logo"><i class="fab fa-html5"></i></span>
                         HTML
@@ -88,9 +97,8 @@
                         <span class="js tamanio-logo"><i class="fab fa-js"></i></span>
                         JS
                     </div>
-                </div>
-                
-                <div class="cards margin-top30 margin-botton">
+               
+                               
                     <div class="logo">
                         <span class="sass tamanio-logo"><i class="fab fa-sass"></i></span>
                         SASS
@@ -124,13 +132,14 @@
                     </div>
                     
                 </article>
+
             </section>
 
             <a name="proyectos">
 
-            <section class="proyectos">
+            <section class="seccion-cards">
                
-                <h2 class="proyectos margin-top40 titulo-secundario">
+                <h2 class="margin-top40 titulo-secundario">
                     <span><i class="fas fa-cogs"></i></span>
                     MIS PROYECTOS
                 </h2>
@@ -150,9 +159,7 @@
                     <img class="img-game" src="./img/undraw_gaming_6oy3.svg" alt="img-proyecto-juego">
                     <p class="descripcion-proyecto">Game Match</p>
                     </a>
-                </div>
-
-                <div class="contenedor-proyectos">
+                    
                     <a class="card-proyecto" href="#">
                         <img class="img-contol-gastos" src="./img/undraw_Savings_re_eq4w.svg" alt="img-proyectp-gastos">
                         <p class="descripcion-proyecto">Controlador de Gastos</p>
@@ -237,7 +244,7 @@
                             <label class="margin-top10" for="mensaje">Mensaje:</label>
                             <textarea class="textarea" name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Deje aqui su mensaje..." maxlength="600"></textarea>
 
-                            <p>(*) Campos Obligatorios</p>
+                            <p class="campos-obl">(*) Campos Obligatorios</p>
 
                             <div class="botones-form margin-top30">
                                 <input type="submit" value="Enviar" class="botonform">
