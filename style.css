@@ -276,7 +276,7 @@ body{
 }
 
 .card-proyecto:hover{
-    border: solid 1{ñpx rgb(254, 95, 85);
+    border: solid 1px rgb(254, 95, 85);
     box-shadow: none;
     transition: 0.3s;
 }
