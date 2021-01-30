@@ -16,8 +16,6 @@ body{
 /*barra de navegacion*/
 .header{    
     display: flex;
-    width: 100vw;
-    /*overflow: hidden;*/
 }
 
 .nav{
@@ -87,10 +85,6 @@ body{
 
 /*fin barra navegacion*/
 
-/*.main-container{
-    overflow: hidden;
-}*/
-
 .main-container{
     display: flex;
     flex-direction: column;
@@ -99,12 +93,11 @@ body{
 /*seccion presentacion*/
 
 .presentacion{
-    width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 100px;
+    padding: 130px 0 0 0;
+    margin-bottom: 16px;
 }
 .personal{
     display: flex;
@@ -150,14 +143,10 @@ body{
 /*fin seccion presentacion*/
 
 /*seccion conocimientos*/
-
 .seccion-cards-conocimiento{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 100px 0 80px 0;
-    
+    padding: 120px 0 80px 0;
 }
 
 .contenedor-cards-conocimiento{
@@ -166,8 +155,6 @@ body{
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
-    width: 100%;
-    height: 100%;
 }
 
 .card-conocimiento{
@@ -226,13 +213,12 @@ body{
 }
 
 .contenededor-texto{
-    width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(254, 95, 85);
+    padding: 50px 0 50px 0;
 }
 
 .signo{
@@ -244,7 +230,7 @@ body{
 
 .texto-articulo{
     display: flex;
-    width: 45vw;
+    width: 55vw;
     color:  rgb(238, 245, 219);
     background-color: rgb(254, 95, 85);
     font-size: 35px;
@@ -257,8 +243,6 @@ body{
 
 /*seccion proyectos*/
 .seccion-cards-proyectos{
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 100px 0 80px 0;
@@ -270,8 +254,6 @@ body{
     flex-wrap: wrap;
     justify-content:space-evenly;
     align-items: center;
-    width: 100%;
-    height: 100%;
     margin:auto;
 
 }
@@ -332,9 +314,6 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
-    height: 650px;
-   /* margin-top: 100px;*/
 }
 
 .contacto{
@@ -347,7 +326,7 @@ body{
     box-shadow: 0px 0px 15px 0px  rgb(122, 158, 159);
     font-size: 20px;
     color:  rgb(79, 99, 103);
-    margin: 20px 0;
+    /*margin: 20px 0;*/
 }
 /*fin recuadro contenedor de la seccion contacto*/
 
@@ -355,11 +334,11 @@ body{
 .contactame{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 45%;
     font-weight: 300; 
     line-height: 35px;
     text-align: justify;
+    padding: 0 20px 0 0;
 }
 
 .margin-top30{
@@ -374,7 +353,7 @@ body{
 .lista-redes{
     list-style: none;
     font-weight: 400;
-    height: 300px;
+   padding: 20px 0 0 0;
 }
 
 .linkeding, .github, .mailto{
@@ -413,7 +392,7 @@ body{
 }
 
 .formulario{
-    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -466,7 +445,7 @@ form p{
     font-size: 20px  
 }
 .campos-obl{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .botones.form{
@@ -474,6 +453,7 @@ form p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   margin-bottom: 10px;
 }
     
 .campoform:hover{
@@ -528,9 +508,9 @@ footer a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     height: 300px;
     background-color:rgb(79, 99, 103);
+    margin: 30px 0 0 0;
 }
 
 /*links a secciones footer*/
@@ -612,69 +592,79 @@ footer a{
     .header{
         display: none;
     }
+}
+
+/*Responsive breackpoint de 900 pixeles
+*/
+
+@media (max-width: 900px){
 
     .presentacion{
         flex-direction: column;
     }
-
+    .lista-footer{
+        display: none;
+    }
     .imagen{
         margin-top: 20px;
     }
-
-    .develop{
-        width: 50%;
-    }
-
-    .contenededor-texto{
-        height: 500px;
-    }
-
-    .signo{
-        font-size: 50px;
-    }
-
-    .texto-articulo{
-        padding-top: 20px;
-        font-size: 30px;
-        width: 80vw;
-        line-height: 30px;
-    }
     
-    }
-    .footer{
-        height: 300px;
-    }
-    .lista-footer{
+    .texto-articulo{
         width: 80vw;
-    }
-
-    .iconos-footer{
-        width: 40vw;
     }
 }
 
-@media (max-width: 700px){
 
-    .card-conocimiento {
-      width: 50%;
-    }
+@media (max-width: 750px){
     .contacto{
         flex-direction: column;
-        height: 1000px;
-    }
-    .contactame{
-        width: 95%;
-        margin: auto;
-    }
-    .lista-redes{
-        height: 100px;
     }
     .escribime{
         width: 95%;
+        padding: 10px 0 0 0;
         margin: auto;
     }
-    .footer{
-        margin-top: 400px;
+    .contactame{
+        width: 95%;
+        padding: 10px 0 0 0;
+        margin: auto;
     }
-}
+    .card-conocimiento{
+        width: 50%;
+    }
 
+    .card-proyecto{
+        width: 50%;
+    }
+
+    .formulario{
+        padding: 0 0 30px 0;
+    }
+
+    .botones-form{
+        padding: 0 0 20px 0;
+    }
+
+    .iconos-footer{
+        width: 70%;
+    }
+
+    .texto-articulo{
+        font-size: 24px;
+    }
+
+}
+@media (max-width: 415px){
+    .copyright, .texto-copy, .icono-copy{
+        font-size: 14px;
+    } 
+
+}
+@media (max-width: 320px){
+    .titulo-secundario{
+        font-size: 28px;
+    }
+    .copyright, .texto-copy, .icono-copy{
+        font-size: 12px;
+    } 
+}
