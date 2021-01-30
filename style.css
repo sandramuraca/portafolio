@@ -660,7 +660,7 @@ footer a{
     } 
 
 }
-@media (max-width: 320px){
+@media (max-width: 350px){
     .titulo-secundario{
         font-size: 28px;
     }
