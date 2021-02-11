@@ -366,7 +366,7 @@ body{
 
 .nombre-red:hover{
     text-decoration: none;
-    color: rgb(254, 95, 85);
+    color: rgb(122, 158, 159);
 }
 
 .icono-redes{
@@ -696,7 +696,7 @@ footer a{
        width: auto;
        font-size: 25px;
     }
-    /*aca card proyectoooooo*/
+    
 }
 
 /*Responsive breackpoint de 350 pixeles
