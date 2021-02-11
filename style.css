@@ -263,7 +263,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 30%;
-    height: 200px;
+    height: 270px;
     text-decoration: none;
     font-size: 20px;
     font-weight: 300;
@@ -359,9 +359,14 @@ body{
    padding: 20px 0 0 0;
 }
 
-.linkeding, .github, .mailto{
+.nombre-red{
     text-decoration: none;
     color: rgb(79, 99, 103);
+}
+
+.nombre-red:hover{
+    text-decoration: none;
+    color: rgb(254, 95, 85);
 }
 
 .icono-redes{
@@ -393,6 +398,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 
 .formulario{
     height: 90%;
@@ -617,10 +623,14 @@ footer a{
     }
 }
 
-
+/*Responsive breackpoint de 750 pixeles
+*/
 @media (max-width: 750px){
     .contacto{
         flex-direction: column;
+    }
+    .titulo-escribime{
+        padding: 40px 0 0 0 ;
     }
     .escribime{
         width: 95%;
@@ -657,12 +667,40 @@ footer a{
     }
 
 }
+
+/*Responsive breackpoint de 415 pixeles
+*/
 @media (max-width: 415px){
     .copyright, .texto-copy, .icono-copy{
         font-size: 14px;
     } 
+    .datos{
+        flex-direction: column;
+    }
+    .campo-nom-y-ap{
+        margin-top: 20px;
+    }
+    
+    .card-conocimiento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 170px;
+        margin: 10px 3px;
+    }
 
+    .card-proyecto{
+        
+       width: auto;
+       font-size: 25px;
+    }
+    /*aca card proyectoooooo*/
 }
+
+/*Responsive breackpoint de 350 pixeles
+*/
 @media (max-width: 350px){
     .titulo-secundario{
         font-size: 28px;
