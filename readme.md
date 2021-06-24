@@ -2,7 +2,7 @@
 
 ![image](./img/portfolio.png)
 
-Portfolio maquetado en: **HTML**, estilado en **CSS**, este portfolio personal es el trabajo práctico solicitado al finalizar el primer módulo de la certificación como Front End que estoy cursando en ADA ITW.
+Portfolio maquetado en **HTML**, estilado en **CSS**, este portfolio personal es el trabajo práctico solicitado al finalizar el primer módulo de la certificación como Front End que estoy cursando en ADA ITW.
 Fue realizado sobre el modelo presentado por Ada en cuanto a estructura los textos, paleta de colores, tipografias e imágenes fueron de elección propia.
 
 El proyecto está dividido en *4 secciones*:
@@ -15,7 +15,7 @@ El proyecto está dividido en *4 secciones*:
 * Josefin
 * Fredoka
 
-🎨 ### **Paleta de Colores***
+🎨 ### **Paleta de Colores**
 [En este link podes visitar la paleta utilizada](https://coolors.co/b8d8d8-7a9e9f-4f6367-eef5db-fe5f55)
 
 📷 ### **Imagenes:**
