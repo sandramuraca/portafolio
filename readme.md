@@ -11,17 +11,17 @@ El proyecto está dividido en *4 secciones*:
 - **Conocimientos**: donde te detallo cuales son los lenguajes aprendidos (y en proceso, por que nunca sabemos todo)📚.
 - **Contacto**: donde encontraras, los links a mis redes, mail y formulario de contacto 📭.
 
-✒ ### **Tipografias utilizadas:**
+✒  **Tipografias utilizadas**:
 * Josefin
 * Fredoka
 
-🎨 ### **Paleta de Colores**
+🎨 **Paleta de Colores**
 [En este link podes visitar la paleta utilizada](https://coolors.co/b8d8d8-7a9e9f-4f6367-eef5db-fe5f55)
 
-📷 ### **Imagenes:**
+📷 **Imagenes:**
 La imagen utilizada para la parte principal de descargo desde: [unDraw.co](https://undraw.co/illustrations)
 
-📌 ### **Iconos:**
+📌  **Iconos:**
 Los íconos se utilizados son de [Fontawesome](https://fontawesome.com/)
 
 💻 **Deployado:**
