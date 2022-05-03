@@ -18,7 +18,9 @@ $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $para = "sandramuraca78@gmail.com";
 $asunto = "Mensaje desde portfolio";
 
-mail($para, $asunto, utf8_decode($mensaje), $header);
+mail($para, $asunto, $mensaje, $header);
+
+echo "<script>alert('Correo enviado exitosamente')</script>"
 
 header("Location:index.html");
 ?>
